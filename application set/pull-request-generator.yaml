@@ -21,7 +21,7 @@ spec:
       namespace: argocd
     spec:
       source:
-        repoURL: 'https://github.com/mabusaa/argocd-course-webapp.git'
+        repoURL: 'https://github.com/cklucker-w/argocd-course-webapp.git'
         targetRevision: '{{head_sha}}'
         path: helm/webapp
       project: "default"

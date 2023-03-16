@@ -4,9 +4,13 @@ metadata:
   name: private-repo-creds-https
   namespace: argocd
   labels:
+    # this is a "crediential template"
+    # this is a type that can use this secret "repo creds" against any url matching this prefix below
     argocd.argoproj.io/secret-type: repo-creds
 stringData:
   type: git
-  url: https://github.com/mabusaa
+  url: https://github.com/cklucker-w
   password: # password goes here, NOTE: dont push secrets into git, use sealed secrets as a solution for secrets in gitops.
   username: my-token
+
+# can make this type using the argocd cli or ui too
