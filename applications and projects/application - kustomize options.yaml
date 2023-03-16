@@ -10,8 +10,9 @@ spec:
   project: default
   source: 
     path: kustomize-guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    repoURL: "https://github.com/cklucker-w/argocd-example-apps.git"
     targetRevision: master
+    # without this section, the prefix in argo will default to "kustomize"
     kustomize:
       namePrefix: staging-
       commonLabels:

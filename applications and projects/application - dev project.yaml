@@ -5,12 +5,13 @@ metadata:
   namespace: argocd
 spec: 
   destination: 
-    namespace: ns-1
+    # namespace: argocd
+    namespace: ns-1 #only ns-1 is allowed as the namespace for this project
     server: "https://kubernetes.default.svc"
   project: dev-project
   source: 
     path: guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    repoURL: "https://github.com/cklucker-w/argocd-example-apps.git"
     targetRevision: master
   syncPolicy:
     syncOptions:

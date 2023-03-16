@@ -10,8 +10,9 @@ spec:
   project: default
   source: 
     path: guestbook-with-sub-directories
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    repoURL: "https://github.com/cklucker-w/argocd-example-apps.git"
     targetRevision: master
+    # this directory > recursive true is necessary to discover sub dirs
     directory:
       recurse: true
   syncPolicy:
